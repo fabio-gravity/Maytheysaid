@@ -245,7 +245,6 @@ main {
     border-radius: 0;
   }
 
-  /* miniatures alignées en bas sur mobile */
   .item:nth-child(3) {
     left: 16px;
   }
@@ -272,17 +271,17 @@ main {
   }
 
   .content {
-    top: auto;
-    bottom: 190px;
+    top: 42%;
+    bottom: auto;
     left: 20px;
     right: 20px;
     width: auto;
     max-width: none;
-    transform: none;
+    transform: translateY(-50%);
   }
 
   .item:nth-child(2) .content {
-    animation: showMobile 0.75s ease forwards;
+    animation: showMobileCentered 0.75s ease forwards;
   }
 
   .title {
@@ -344,9 +343,11 @@ main {
   }
 
   .content {
+    top: 40%;
+    bottom: auto;
     left: 16px;
     right: 16px;
-    bottom: 168px;
+    transform: translateY(-50%);
   }
 
   .title {
@@ -364,15 +365,15 @@ main {
   }
 }
 
-@keyframes showMobile {
+@keyframes showMobileCentered {
   from {
     opacity: 0;
     filter: blur(8px);
-    transform: translateY(30px);
+    transform: translateY(calc(-50% + 30px));
   }
   to {
     opacity: 1;
     filter: blur(0);
-    transform: translateY(0);
+    transform: translateY(-50%);
   }
 }
