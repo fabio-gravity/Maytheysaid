@@ -8,42 +8,27 @@
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
 <body>
- <header>
-    <nav role="navigation">
-  <div id="menuToggle">
-  
+ <header class="site-header">
+  <nav class="menu-nav" aria-label="Navigation principale">
+    <div id="menuToggle">
+      <input type="checkbox" id="menuCheckbox" />
 
-    <input type="checkbox" id="menuCheckbox" />
-   
+      <label for="menuCheckbox" class="menu-button" aria-label="Ouvrir le menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
 
-    <span></span>
-    <span></span>
-    <span></span>
-  
-   
-    <ul id="menu">
-      <li>
-        <a href="#">
-          <label for="menuCheckbox" onclick="this.parentNode.click();">Home</label>
-        </a>
-      </li>
-      <li>
-        <a href="#about">
-          <label for="menuCheckbox" onclick="this.parentNode.click();">About</label>
-        </a>
-      </li>
-      
-      <li><label for="menuCheckbox"><a>Info</a></label></li>
-      <li><label for="menuCheckbox"><a>Contact</a></label></li>
-      
-      
-      <li>
-        <a href="" target="_blank">Show me more</a>
-      </li>
-    </ul>
-  </div>
-</nav>
- </header>
+      <ul id="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#info">Info</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#" target="_blank" rel="noopener noreferrer">Show me more</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
  <main>
   <ul class="slider">
 
