@@ -9,7 +9,40 @@
 </head>
 <body>
  <header>
-    
+    <nav role="navigation">
+  <div id="menuToggle">
+  
+
+    <input type="checkbox" id="menuCheckbox" />
+   
+
+    <span></span>
+    <span></span>
+    <span></span>
+  
+   
+    <ul id="menu">
+      <li>
+        <a href="#">
+          <label for="menuCheckbox" onclick="this.parentNode.click();">Home</label>
+        </a>
+      </li>
+      <li>
+        <a href="#about">
+          <label for="menuCheckbox" onclick="this.parentNode.click();">About</label>
+        </a>
+      </li>
+      
+      <li><label for="menuCheckbox"><a>Info</a></label></li>
+      <li><label for="menuCheckbox"><a>Contact</a></label></li>
+      
+      
+      <li>
+        <a href="" target="_blank">Show me more</a>
+      </li>
+    </ul>
+  </div>
+</nav>
  </header>
  <main>
   <ul class="slider">
